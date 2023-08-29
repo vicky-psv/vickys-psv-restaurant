@@ -12,7 +12,18 @@ import pic10 from "./resources/img/pic10.jpg";
 
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
-import { Stack, Typography } from "@mui/material";
+import {
+  Button,
+  Card,
+  CardActionArea,
+  CardMedia,
+  Dialog,
+  DialogActions,
+  DialogContent,
+  Grow,
+  Stack,
+  Typography,
+} from "@mui/material";
 
 const itemData = [
   {
@@ -70,7 +81,30 @@ function srcset(image, size, rows = 1, cols = 1) {
     }&fit=crop&auto=format&dpr=2 2x`,
   };
 }
+
+const Transition = React.forwardRef(function Transition(props, ref) {
+  return (
+    <Grow
+      ref={ref}
+      {...props}
+      style={{ transformOrigin: "0 0 0" }}
+      {...{ timeout: 800 }}
+    />
+  );
+});
+
 export default function Gallery() {
+  const [open, setOpen] = React.useState(false);
+  const [item, setItem] = React.useState(null);
+
+  const handleClickOpen = (item) => {
+    setOpen(true);
+    setItem(item);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
   return (
     <Stack
       gap={2}
@@ -81,9 +115,30 @@ export default function Gallery() {
       <Typography variant="h2" component="div" color="secondary">
         Gallery
       </Typography>
+      {item && (
+        <Dialog
+          open={open}
+          TransitionComponent={Transition}
+          keepMounted
+          onClose={handleClose}
+          aria-describedby="alert-dialog-slide-description"
+        >
+          <DialogContent>
+            <Card>
+              <CardActionArea>
+                <CardMedia component="img" image={item.img} />
+              </CardActionArea>
+            </Card>
+          </DialogContent>
+          <DialogActions>
+            <Button onClick={handleClose}>Schließen</Button>
+          </DialogActions>
+        </Dialog>
+      )}
       <ImageList variant="quilted" cols={4} rowHeight={121}>
         {itemData.map((item) => (
           <ImageListItem
+            onClick={() => handleClickOpen(item)}
             key={item.img}
             cols={item.cols || 1}
             rows={item.rows || 1}
