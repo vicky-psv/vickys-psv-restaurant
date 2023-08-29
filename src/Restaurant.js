@@ -23,7 +23,7 @@ function Restaurant() {
       }}
     >
       <Typography variant="h2" component="div" color="secondary">
-        Unsere Küche 
+        Unsere Küche
       </Typography>
 
       <Box
@@ -31,10 +31,9 @@ function Restaurant() {
           display: "flex",
           flexDirection: "row",
           alignContent: "space-between",
-          flexWrap: "wrap" 
+          flexWrap: "wrap",
         }}
       >
-        
         <Box
           component="img"
           sx={{
@@ -60,36 +59,19 @@ function Restaurant() {
       </Box>
 
       <Typography component="div" variant="subtitle1">
-        offeriert eine große Bandbreite an vegetarischen, bürgerlichen,
-        mediterranen, aber auch internationalen Gerichten, die immer frisch
-        zubereitet werden. Zu den vielfältigen Salattellern wird
-        selbstgebackenes Brot gereicht und das Fleisch stammt vom örtlichen
-        Metzger.
+        Genießen Sie traditionell badische Gerichte, zubereitet mit den besten
+        Zutaten der Region. Sowohl vegetarische Gerichte, als auch Fleisch- und
+        Fischgerichte. Gleichzeitig bereichern wir unsere Küche mit mediterranen
+        Aromen, Gewürzen und frischem Gemüse.
       </Typography>
 
       <Typography component="div" variant="subtitle1">
-        Werktags von Montag bis Freitag zwischen 11:30 - 15:00 Uhr bieten wir
-        einen Mittagstisch an. Zur Auswahl steht ein veganes, ein vegetarisches
-        sowie ein Fleisch- oder ein Fischgericht.
+        Werktags von Dienstag bis Freitag zwischen 11:30 - 15:00 Uhr bieten wir
+        einen sich wechselnden Mittagstisch an, sowie vielseitige Alternativen.
       </Typography>
 
       <Typography component="div" variant="subtitle1">
-        Weiter haben wir auch einige Alternativen zu diesen Mittagsgerichten.
-        Wenn Sie zu einem Essen einen erlesenen Wein genießen möchent haben wir
-        hierfür eine große Auswahl. Von 15:00 bis 17:30 Uhr bieten wir unter der
-        Woche eine kleine Vesperkarte an.
-      </Typography>
-
-      <Typography component="div" variant="subtitle1">
-        Bitte beachten Sie in Ihrem eigenen Interesse, dass unser Lokal
-        insbesondere an Wochenenden abends bzw. an Sonn- und Feiertagen
-        ganztags, häufig stark ausgelastet ist.
-      </Typography>
-
-      <Typography component="div" variant="subtitle1">
-        Wir empfehlen deshalb ab fünf Personen rechtzeitig zu reservieren, da
-        wir ansonsten nicht garantieren können, über hinreichend freie Plätze
-        für Sie zu verfügen.
+        Wir freuen uns darauf, Sie bei uns begrüßen zu dürfen!
       </Typography>
     </Stack>
   );
