@@ -44,7 +44,7 @@ export default function Contact() {
           }}
         >
           <Typography component="div" variant="h6">
-            Tel. 076121480952
+            Tel. 0761 21480952
           </Typography>
 
           <Typography component="div" variant="subtitle1">
