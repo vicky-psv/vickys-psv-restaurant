@@ -48,10 +48,10 @@ export default function Contact() {
           </Typography>
 
           <Typography component="div" variant="subtitle1">
-            deineEmilvicky@deinemail.com
+            info@vickys-psv-gaststaette.de
           </Typography>
           <Typography component="div" variant="subtitle1">
-            http://www.psv-gaststaette.de/
+            https://www.vickys-psv-gaststaette.de/
           </Typography>
         </Stack>
       </Box>
