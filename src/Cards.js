@@ -48,13 +48,13 @@ function Cards() {
         <ListItem disablePadding>
           <ListItemButton
             component="a"
-            href="./speisekarte.pdf"
+            href="./MittagsMenues.pdf"
             target="_blank"
           >
             <ListItemIcon>
               <RestaurantIcon />
             </ListItemIcon>
-            <ListItemText primary="Mittagskarte (Kommt bald, der Zeit noch nicht verfügbar)" />
+            <ListItemText primary="Mittagskarte" />
           </ListItemButton>
         </ListItem>
         <ListItem disablePadding>
@@ -66,19 +66,7 @@ function Cards() {
             <ListItemIcon>
               <RestaurantIcon />
             </ListItemIcon>
-            <ListItemText primary="Alternative Mittagskarte (Kommt bald, der Zeit noch nicht verfügbar)" />
-          </ListItemButton>
-        </ListItem>
-        <ListItem disablePadding>
-          <ListItemButton
-            component="a"
-            href="./speisekarte.pdf"
-            target="_blank"
-          >
-            <ListItemIcon>
-              <RestaurantIcon />
-            </ListItemIcon>
-            <ListItemText primary="Saisonkarte (Kommt bald, der Zeit noch nicht verfügbar)" />
+            <ListItemText primary="Getränkekarte (Kommt bald, der Zeit noch nicht verfügbar)" />
           </ListItemButton>
         </ListItem>
       </List>
