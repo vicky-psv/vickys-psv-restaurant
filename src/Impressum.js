@@ -1,15 +1,8 @@
 import {
   Typography,
   Stack,
-  ListItem,
-  ListItemButton,
-  ListItemIcon,
-  List,
-  ListItemText,
-  ListSubheader,
 } from "@mui/material";
 import React from "react";
-import RestaurantIcon from "@mui/icons-material/Restaurant";
 
 function Impressum() {
   return (

@@ -1,4 +1,4 @@
-import { Typography, Paper, Box, Tabs, Tab } from "@mui/material";
+import { Paper, Box } from "@mui/material";
 import * as React from "react";
 import PropTypes from "prop-types";
 import Gallery from "./Gallery";
@@ -31,13 +31,6 @@ TabPanel.propTypes = {
   index: PropTypes.number.isRequired,
   value: PropTypes.number.isRequired,
 };
-
-function a11yProps(index) {
-  return {
-    id: `simple-tab-${index}`,
-    "aria-controls": `simple-tabpanel-${index}`,
-  };
-}
 
 function Panels(props) {
 

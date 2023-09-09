@@ -14,7 +14,7 @@ function Welcome() {
       </Typography>
 
       <Typography component="div" variant="subtitle1">
-        Willkommen bei Vickys PSV Gastsätte! Entdecken Sie unsere vielfältige
+        Willkommen bei Vickys PSV Gaststätte! Entdecken Sie unsere vielfältige
         Speisekarte und genießen Sie köstliche Gerichte in gemütlicher
         Atmosphäre. Ob klassisch oder modern, hier ist für jeden etwas dabei.
         Wir freuen uns darauf, Ihnen unvergessliche Genussmomente zu bereiten.
