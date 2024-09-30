@@ -25,11 +25,9 @@ function Welcome() {
       </Typography>
 
       <Typography component="div" variant="subtitle1">
-        Dienstag bis Sonntag: <strong>11:30 Uhr bis 22:00 Uhr</strong>
+        Montag bis Sonntag: <strong>11:30 Uhr bis 22:00 Uhr</strong>
       </Typography>
-      <Typography component="div" variant="subtitle1">
-        Montag: Geschlossen
-      </Typography>
+
 
       <Typography component="div" variant="subtitle1">
         Wir freuen uns darauf, Sie bei uns begrüßen zu dürfen!
